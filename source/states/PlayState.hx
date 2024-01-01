@@ -1,4 +1,4 @@
-package;
+package states;
 
 import llua.Lua.Lua_helper;
 import Script.LuaScript;
