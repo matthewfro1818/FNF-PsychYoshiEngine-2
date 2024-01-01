@@ -1,4 +1,4 @@
-package;
+package states;
 
 import Script.DummyScript;
 import mod_support_stuff.FullyModState;
