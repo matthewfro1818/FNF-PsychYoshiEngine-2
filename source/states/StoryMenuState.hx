@@ -67,10 +67,10 @@ class StoryMenuState extends FullyModState
 	public var weekDataArrayFNFWeek = null;
 	public var weekButtonsArrayString = null;
 
-	var dadsMapString, FlxSprite = [];
-	var gfsMapString, FlxSprite = [];
-	var bfsMapString, FlxSprite = [];
-	var bgsMapString, FlxSprite = [];
+	var dadsMapString, FlxSprite;
+	var gfsMapString, FlxSprite;
+	var bfsMapString, FlxSprite;
+	var bgsMapString, FlxSprite;
 
 	public function loadWeeks() {
 		weekData = [];
