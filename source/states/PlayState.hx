@@ -3481,18 +3481,14 @@ class PlayState extends MusicBeatState
 	#if (!flash && sys)
 	public var runtimeShaders:Map<String, Array<String>> = new Map<String, Array<String>>();
 	{
-
-		#if (!flash && MODS_ALLOWED && sys)
-		if(!runtimeShaders.exists(name) && !initLuaShader(name))
 		{
-			FlxG.log.warn('Shader $name is missing!');
+	        	if(!runtimeShaders.exists(name) && !initLuaShader(name))
+	         	{
+		        	FlxG.log.warn('Shader $name is missing!');
+	         	}
+	        	var arr:Array<String> = runtimeShaders.get(name);
+		
 		}
-
-		var arr:Array<String> = runtimeShaders.get(name);
-		#else
-		FlxG.log.warn("Platform unsupported for Runtime Shaders!");
-		return null;
-		#end
 	}
 
 	public function initLuaShader(name:String, ?glslVersion:Int = 120)
