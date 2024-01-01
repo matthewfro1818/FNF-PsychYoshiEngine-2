@@ -111,7 +111,6 @@ class PlayState extends MusicBeatState
 	public var modchartTweens:Map<String, FlxTween> = new Map<String, FlxTween>();
 	public var modchartSprites:Map<String, ModchartSprite> = new Map<String, ModchartSprite>();
 	public var modchartTimers:Map<String, FlxTimer> = new Map<String, FlxTimer>();
-	public var modchartSounds:Map<String, FlxSound> = new Map<String, FlxSound>();
 	public var modchartTexts:Map<String, FlxText> = new Map<String, FlxText>();
 	public var modchartSaves:Map<String, FlxSave> = new Map<String, FlxSave>();
 	#end
@@ -148,9 +147,6 @@ class PlayState extends MusicBeatState
 	public static var storyDifficulty:Int = 1;
 
 	public var spawnTime:Float = 2000;
-
-	public var vocals:FlxSound;
-	public var inst:FlxSound;
 
 	public var dad:Character = null;
 	public var gf:Character = null;
@@ -1265,7 +1261,6 @@ class PlayState extends MusicBeatState
 
 		curSong = songData.song;
 
-		vocals = new FlxSound();
 		try
 		{
 			if (songData.needsVoices)
@@ -1276,7 +1271,6 @@ class PlayState extends MusicBeatState
 		#if FLX_PITCH vocals.pitch = playbackRate; #end
 		FlxG.sound.list.add(vocals);
 
-		inst = new FlxSound();
 		try {
 			inst.loadEmbedded(Paths.inst(songData.song));
 		}
