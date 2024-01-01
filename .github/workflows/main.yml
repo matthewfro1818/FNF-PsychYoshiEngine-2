@@ -49,6 +49,7 @@ jobs:
           haxelib install hscript
           haxelib install SScript
           haxelib install hxdiscord_rpc
+          haxelib install flxanimate
           haxelib git hscript-ex https://github.com/ianharrigan/hscript-ex
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
           haxelib git hxvm-luajit https://github.com/nebulazorua/hxvm-luajit
