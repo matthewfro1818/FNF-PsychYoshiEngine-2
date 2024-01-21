@@ -36,7 +36,7 @@ jobs:
           haxelib install openfl
           haxelib install flixel
           haxelib run lime setup flixel
-          haxelib run lime setup         
+          haxelib run lime setup
           haxelib install tjson
           haxelib install hxjsonast
           haxelib install hxCodec 2.5.1          
