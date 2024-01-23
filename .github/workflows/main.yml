@@ -49,6 +49,7 @@ jobs:
           haxelib git polymod https://github.com/larsiusprime/polymod.git
           haxelib install hxcpp-debug-server
           haxe -cp ./setup -D analyzer-optimize -main Main --interp
+          haxelib fixrepo
         shell: cmd
       - name: Skip SScript setup mode
         run: echo 'oy9:showMacroty8:loopCosti25y10:includeAllfg' >> %USERPROFILE%/settings.cocoa
