@@ -1,7 +1,9 @@
 package;
 
 import Sys.sleep;
+#if DISCORD_ALLOWED
 import discord_rpc.DiscordRpc;
+#end
 
 using StringTools;
 
